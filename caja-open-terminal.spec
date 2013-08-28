@@ -36,9 +36,6 @@ NOCONFIGURE=1 ./autogen.sh
 %install
 %makeinstall_std
 
-#we don't want these
-rm -f %{buildroot}%{_libdir}/caja/extensions-2.0/*.la
-
 %find_lang %{name}
 
 %files -f %{name}.lang
