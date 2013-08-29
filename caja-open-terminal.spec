@@ -4,7 +4,7 @@
 Summary:        Caja extension for an open terminal shortcut
 Name:           caja-open-terminal
 Version:        1.6.0
-Release:        1
+Release:        2
 URL:            http://mate-desktop.org
 Source0:        http://pub.mate-desktop.org/releases/%{url_ver}/%{oname}-%{version}.tar.xz
 License:        GPLv2+
@@ -17,7 +17,8 @@ BuildRequires:  pkgconfig(mate-doc-utils)
 BuildRequires:  pkgconfig(gsettings-desktop-schemas)
 
 Requires:       gsettings-desktop-schemas
-Provides:       %{oname} = %{version}-%{release}
+
+%rename %{oname}
 
 %description
 This is a proof-of-concept Caja extension which allows you to open
